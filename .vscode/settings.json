@@ -1,0 +1,5 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "abell": "html"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-abell-app",
+  "version": "1.0.0",
+  "description": "Default Starter for Abell",
+  "main": "abell.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run tailwind:css:dev && abell serve",
+    "build": "abell build && npm run tailwind:css:prod",
+    "tailwind:css:prod": "NODE_ENV=production tailwindcss build theme/static-assets/tailwind.css -o dist/static-assets/tailwind.prod.css",
+    "tailwind:css:dev": "tailwindcss build theme/static-assets/tailwind.css -o theme/static-assets/tailwind.prod.css"
+  },
+  "keywords": [],
+  "author": "abelljs",
+  "license": "MIT",
+  "devDependencies": {
+    "abell": "^0.7.5",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.8",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
+  }
+}

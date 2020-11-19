@@ -1,0 +1,16 @@
+{{
+  const { globalMeta, contentArray, $root } = Abell;
+}}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="{{$root}}/static-assets/images/favicon.ico"/>
+  <link rel="stylesheet" href="{{$root}}/static-assets/tailwind.prod.css"/>
+  
+  <title>{{ globalMeta.title }}</title>
+</head>
+<body>
+  <div class="bg-blue-300 text-gray-800 p-6">Hello, World!</div>
+</body>
+</html>
