@@ -1,5 +1,5 @@
 {{
-  const { globalMeta, contentArray, $root } = Abell;
+  const { globalMeta, $root } = Abell;
 }}
 <html lang="en">
 <head>
