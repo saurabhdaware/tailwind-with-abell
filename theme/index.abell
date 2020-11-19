@@ -10,7 +10,19 @@
   
   <title>{{ globalMeta.title }}</title>
 </head>
-<body>
-  <div class="bg-blue-300 text-gray-800 p-6">Hello, World!</div>
+<body class="bg-white dark:bg-gray-900">
+  <main class="p-10">
+    <button 
+      class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 shadow-md font-bold p-3 my-4"
+      onclick="document.querySelector('html').classList.toggle('dark')"
+    >
+      Toggle Dark Mode
+    </button>
+    <div class="bg-blue-100 shadow-md p-9 dark:bg-blue-800">
+      <span class="text-gray-900 text-2xl font-bold dark:text-gray-200">
+        Hello, Tailwind v2!
+      </span>
+    </div>
+  </main>
 </body>
 </html>
